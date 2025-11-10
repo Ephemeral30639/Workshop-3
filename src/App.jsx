@@ -18,10 +18,10 @@ function App() {
       </div>
       <h1 className="text-4xl font-bold text-blue-600">Vite + React</h1>
       <p className="text-xl text-green-500 mt-4">Hello There!</p>
-      <div className="card bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full text-center">
+      <div className="card bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-2xl max-w-md w-full text-center border-2 border-gray-200 dark:border-gray-600">
         <button 
           onClick={() => setCount((count) => count + 1)}
-          className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg border-2 border-purple-500 transition-all duration-200 text-lg mb-4"
+          className="bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-4 px-8 rounded-xl shadow-2xl border-4 border-red-300 transition-all duration-300 text-xl mb-6 transform hover:scale-105 active:scale-95"
         >
           count is {count}
         </button>
