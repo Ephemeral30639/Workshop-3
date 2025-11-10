@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Override button styles for better contrast */
+.custom-button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Force Tailwind colors */
+button.bg-emerald-600,
+button[style*="059669"] {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+}
+
+button.bg-blue-600,
+button[style*="2563eb"] {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+button.bg-red-600,
+button[style*="dc2626"] {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+}
