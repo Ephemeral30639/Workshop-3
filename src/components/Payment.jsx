@@ -165,24 +165,14 @@ function Payment() {
         <div className="flex gap-4">
           <button
             type="submit"
-            className="custom-button flex-1 !bg-blue-600 hover:!bg-blue-700 !text-white !font-bold !py-4 !px-8 !rounded-xl !shadow-xl !border-2 !border-blue-400 transition-all duration-300 transform hover:scale-105 !text-lg bg-blue-600"
-            style={{ 
-              backgroundColor: '#2563eb !important',
-              color: '#ffffff !important',
-              border: '2px solid #60a5fa !important'
-            }}
+            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl shadow-xl border-2 border-blue-400 transition-all duration-300 transform hover:scale-105 text-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
           >
             Submit
           </button>
           <button
             type="button"
             onClick={handleCancel}
-            className="custom-button flex-1 !bg-red-600 hover:!bg-red-700 !text-white !font-bold !py-4 !px-8 !rounded-xl !shadow-xl !border-2 !border-red-400 transition-all duration-300 transform hover:scale-105 !text-lg bg-red-600"
-            style={{ 
-              backgroundColor: '#dc2626 !important',
-              color: '#ffffff !important',
-              border: '2px solid #f87171 !important'
-            }}
+            className="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-xl shadow-xl border-2 border-red-400 transition-all duration-300 transform hover:scale-105 text-lg focus:outline-none focus:ring-4 focus:ring-red-300"
           >
             Cancel
           </button>
