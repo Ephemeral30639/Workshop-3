@@ -7,29 +7,32 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 p-8">
+      <div className="flex justify-center items-center gap-8 mb-8">
         <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo w-24 h-24" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="logo react w-24 h-24" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <p>Hello There!</p>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <h1 className="text-4xl font-bold text-blue-600">Vite + React</h1>
+      <p className="text-xl text-green-500 mt-4">Hello There!</p>
+      <div className="card bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full text-center">
+        <button 
+          onClick={() => setCount((count) => count + 1)}
+          className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg border-2 border-purple-500 transition-all duration-200 text-lg mb-4"
+        >
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+        <p className="text-gray-600 dark:text-gray-300">
+          Edit <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
+      <p className="read-the-docs text-gray-600 dark:text-gray-400 text-center mt-8">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </div>
   )
 }
 
